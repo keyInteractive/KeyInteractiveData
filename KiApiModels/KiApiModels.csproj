@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Visual Studio Projects\KeyInteractive\Github\KeyInteractiveAPI\KiApiModels\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\Visual Studio Projects\KeyInteractive\Github\KeyInteractiveAPI\KiApiModels\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="KeyInteractiveApiResponses">
+      <HintPath>..\..\KiApiResponse\KeyInteractiveApiResponses\bin\Release\net7.0\KeyInteractiveApiResponses.dll</HintPath>
+    </Reference>
+    <Reference Include="KiApiResponse">
+      <HintPath>..\..\KiApiResponse\KiApiResponse\bin\Release\net7.0\KiApiResponse.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
