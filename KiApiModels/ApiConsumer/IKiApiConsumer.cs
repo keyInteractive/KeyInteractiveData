@@ -1,12 +1,10 @@
-﻿using KeyInteractiveApiResponses;
-using KiApiModels.ApiResponses;
+﻿using KiApiModels.ApiResponses;
 using KiApiModels.DTO;
 
 namespace KiApiModels.ApiConsumer;
 
 public interface IKiApiConsumer
 {
-
     /// <summary>
     /// Registra un nuovo utente Key Interactive
     /// </summary>

@@ -1,5 +1,4 @@
-﻿using KeyInteractiveApiResponses;
-using KiApiModels.ApiResponses;
+﻿using KiApiModels.ApiResponses;
 using KiApiModels.Classes;
 using KiApiModels.DTO;
 using Newtonsoft.Json.Linq;
@@ -14,10 +13,17 @@ public class KiApiConsumer : IKiApiConsumer
 {
     private HttpClient _ApiClient;
 
-    private static readonly string baseUri = "https://localhost:7183/";
+    //private static readonly string baseUri = "https://localhost:7183/";
 
     //private static readonly string baseUri = "https://keyinteractiveapi.com/";
 
+    private static readonly string baseUri = "https://users-api.keyinteractive.net/";
+
+    //private static readonly string baseUri = "https://3sjjdb99-7183.euw.devtunnels.ms/";
+
+    //http://192.168.0.105:6872/
+
+    //https://3sjjdb99-7183.euw.devtunnels.ms/
     public KiApiConsumer()
 	{
         _ApiClient = new HttpClient();
@@ -32,6 +38,7 @@ public class KiApiConsumer : IKiApiConsumer
         _ApiClient.DefaultRequestHeaders.Clear();
         _ApiClient.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
     }
+
 
     /// <summary>
     /// Registra un nuovo utente Key Interactive

@@ -1,5 +1,4 @@
-﻿using KeyInteractiveApiResponses;
-using KiApiModels.Classes;
+﻿using KiApiModels.Classes;
 using System.Net;
 
 namespace KiApiModels.ApiResponses;

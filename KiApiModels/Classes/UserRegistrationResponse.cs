@@ -1,6 +1,4 @@
-﻿using KeyInteractiveApiResponses;
-
-namespace KiApiModels.Classes;
+﻿namespace KiApiModels.Classes;
 
 public class UserRegistrationResponse
 {
